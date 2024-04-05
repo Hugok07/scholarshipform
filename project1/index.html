@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFR Scholarship Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form">
+        <h1 id="title">EFR Scholarship Application</h1>
+        <p id="description">Opportunity for students to request financial support through the EFR Foundation and affiliated organizations, facilitating access to education and training.</p>
+        <form id="survey-form" action="">
+            <label id="name-label">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            <label id="email-label">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+            <label id="number-label">Age (14-30): </label>
+            <input type="number" name="number" id="number" placeholder="Enter your Age" min="14" max="30">
+            <label for="dropdown">What type of scholarship do you want to apply for?</label>
+            <select id="dropdown">
+                <option>Merit-based scholarship</option>
+                <option>Sports scholarship</option>
+                <option>Research scholarship</option>
+            </select>
+            <fieldset>
+                <legend>What type of studies are you interested in?</legend>
+                <label for="Artistic"><input type="radio" name="type" id="Artistic" class="type" value="Artistic"> Artistic Studies</label><br>
+                <label for="University"><input type="radio" name="type" id="University" class="type" value="University"> Undergraduate Studies</label><br>
+                <label for="post"><input type="radio" name="type" id="post" class="type" value="post"> Postgraduate Studies</label><br>                
+                <label for="Other"><input type="radio" name="type" id="Other" class="type" value="Other"> Other</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>What fields of studies are you interested in?</legend>
+                <label for="tech"><input type="checkbox" name="fields" class="type" id="tech" value="tech"> Technical Careers</label><br>
+                <label for="med"><input type="checkbox" name="fields" class="type" id="med" value="med"> Medicine</label><br>
+                <label for="eng"><input type="checkbox" name="fields" class="type" id="eng" value="eng"> Engineering</label><br>
+                <label for="science"><input type="checkbox" name="fields" class="type" id="science" value="science"> Sciences</label><br>
+                <label for="art"><input type="checkbox" name="fields" class="type" id="art" value="art"> Arts</label><br>
+            </fieldset>
+            <label for="coment">Any comments or suggestions?</label><br>
+            <textarea id="coment" placeholder="Enter your coment here..." rows="6"></textarea>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+</body>
+</html>
